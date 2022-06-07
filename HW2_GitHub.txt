@@ -1,0 +1,105 @@
+GitHub. HW_2
+1. На локальном репозитории сделать ветки для:
+- Postman
+- Jmeter
+- CheckLists
+- Bag Reports
+- SQL
+- Charles
+- Mobile testing
+# Игорян@Igoryan MINGW64 /d/QAtest/git/HW_terminal_gitbash (main)
+$ git branch Postman
+
+Игорян@Igoryan MINGW64 /d/QAtest/git/HW_terminal_gitbash (main)
+$ git branch Jmeter
+
+Игорян@Igoryan MINGW64 /d/QAtest/git/HW_terminal_gitbash (main)
+$ git branch CheckList
+
+Игорян@Igoryan MINGW64 /d/QAtest/git/HW_terminal_gitbash (main)
+$ git branch Bag_Reports
+
+Игорян@Igoryan MINGW64 /d/QAtest/git/HW_terminal_gitbash (main)
+$ git branch SQL
+
+Игорян@Igoryan MINGW64 /d/QAtest/git/HW_terminal_gitbash (main)
+$ git branch Charles
+
+Игорян@Igoryan MINGW64 /d/QAtest/git/HW_terminal_gitbash (main)
+$ git branch Mobail_testing
+
+2. Запушить все ветки на внешний репозиторий
+# Игорян@Igoryan MINGW64 /d/QAtest/git/HW_terminal_gitbash (main)
+$ git push -u origin Postman
+
+Игорян@Igoryan MINGW64 /d/QAtest/git/HW_terminal_gitbash (main)
+$ git push -u origin Jmeter
+
+Игорян@Igoryan MINGW64 /d/QAtest/git/HW_terminal_gitbash (main)
+$ git push -u origin CheckList
+
+Игорян@Igoryan MINGW64 /d/QAtest/git/HW_terminal_gitbash (main)
+$ git push -u origin Bag_Reports SQL // тут решил попробовать запушить сразу несколько веток. ввел названия через пробел - БИНГООООООО
+
+Игорян@Igoryan MINGW64 /d/QAtest/git/HW_terminal_gitbash (main)
+$ git push -u origin Charles Mobail_testing
+
+3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта
+# Игорян@Igoryan MINGW64 /d/QAtest/git/HW_terminal_gitbash (main)
+$ git checkout Bag_Reports
+Игорян@Igoryan MINGW64 /d/QAtest/git/HW_terminal_gitbash (Bag_Reports)
+$ touch BagReports.txt
+
+4. Запушить структуру багрепорта на внешний репозиторий
+# Игорян@Igoryan MINGW64 /d/QAtest/git/HW_terminal_gitbash (Bag_Reports)
+$ git add BagReports.txt
+
+Игорян@Igoryan MINGW64 /d/QAtest/git/HW_terminal_gitbash (Bag_Reports)
+$ git commit -m "add bagreport"
+
+Игорян@Igoryan MINGW64 /d/QAtest/git/HW_terminal_gitbash (Bag_Reports)
+$ git push
+
+5. Вмержить ветку Bag Reports в Main
+
+#Игорян@Igoryan MINGW64 /d/QAtest/git/HW_terminal_gitbash (Bag_Reports)
+$ git checkout main
+
+Игорян@Igoryan MINGW64 /d/QAtest/git/HW_terminal_gitbash (main)
+$ git merge Bag_Reports -m "The ferst merge"
+
+6. Запушить main на внешний репозиторий.
+# Игорян@Igoryan MINGW64 /d/QAtest/git/HW_terminal_gitbash (main)
+$ git push // не совсем понял как так вышло, но в тут(в main) уже не надо было делать "add"/commit" почему то. вероятно потому что сделал merge чуть ранее
+
+
+7. В ветке CheckLists набросать структуру чек листа.
+# Игорян@Igoryan MINGW64 /d/QAtest/git/HW_terminal_gitbash (main)
+$ git checkout Checklist
+Switched to branch 'Chgit pullecklist'
+
+Игорян@Igoryan MINGW64 /d/QAtest/git/HW_terminal_gitbash (Checklist)
+$ touch Cheklist.txt
+
+8. Запушить структуру на внешний репозиторий
+# Игорян@Igoryan MINGW64 /d/QAtest/git/HW_terminal_gitbash (Checklist)
+$ git add Cheklist.txt
+
+Игорян@Igoryan MINGW64 /d/QAtest/git/HW_terminal_gitbash (Checklist)
+$ git commit -m "add checklist"
+
+Игорян@Igoryan MINGW64 /d/QAtest/git/HW_terminal_gitbash (CheckList)
+$ git push
+
+9. На внешнем репозитории сделать Pull Request ветки CheckLists в main
+# Жмякнуть по кнопке pull request
+
+10. Синхронизировать Внешнюю и Локальную ветки Main
+#Игорян@Igoryan MINGW64 /d/QAtest/git/HW_terminal_gitbash (CheckList)
+$ git checkout main
+ Игорян@Igoryan MINGW64 /d/QAtest/git/HW_terminal_gitbash (main)
+$ git fetch
+
+Игорян@Igoryan MINGW64 /d/QAtest/git/HW_terminal_gitbash (main)
+$ git pull
+
