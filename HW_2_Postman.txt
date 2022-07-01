@@ -118,11 +118,8 @@ http://162.55.220.72:5005/user_info_3
 
 
 12. Проверить что u_salary_1_5_year в ответе равно salary*4 (salary забрать из request)
-#let reg_salary = reg.salary;
-let reg_salary2 = jsonData.family.u_salary_1_5_year;
-let salary_1_5_year = reg_salary * 4;
-pm.test("Your test name", function () {  
-    pm.expect(reg_salary2).to.eql(salary_1_5_year);
+#pm.test("Your test name", function () {  
+    pm.expect(jsonData.family.u_salary_1_5_year).to.eql(reg.salary*4);
 });
 
 
